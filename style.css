@@ -1,6 +1,8 @@
 body{
     background-color: lightblue;
   }
+  .link { color: #3672c0; } 
+  .link:hover { color: #09cd09; } 
   h1{
     font-size: 58px;
     margin-bottom: 10px;
@@ -49,4 +51,7 @@ body{
   }
   li.JobBullets{
     padding-bottom: 13px;
+  }
+  footer{
+    text-align: Center;
   }
