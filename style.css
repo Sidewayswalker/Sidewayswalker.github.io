@@ -2,7 +2,7 @@ body{
     background-color: lightblue;
   }
 .link { color: #3672c0; } 
-.link:hover { color: #09cd09; } 
+.link:hover { color: #09ce09; } 
   h1{
     font-size: 58px;
     margin-bottom: 10px;
@@ -29,6 +29,7 @@ body{
   .Objective{
     font-size: 20px;
     margin-bottom: 1rem;
+    width: 970px;
   }
   .Education_Software{
     margin-bottom: -1.5rem;
@@ -53,5 +54,5 @@ body{
     padding-bottom: 13px;
   }
   footer{
-    text-align: Center;
+    padding-left: 300px;
   }
