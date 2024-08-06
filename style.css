@@ -40,6 +40,7 @@ body.dark {
     padding: 10px 14px;
     background: var(--sidebar-color);
     transition: var(--tran-05);
+    z-index: 100;
 }
 .sidebar.close{
     width: 84px;
@@ -64,7 +65,7 @@ body.dark {
 .sidebar ul li {
     display: flex;
     align-items: center;
-    height: 50px;
+    height: 60px;
 }
 
 .sidebar ul li a {
@@ -130,7 +131,7 @@ body.dark {
     position: absolute;
     top: 50%;
     right: -20px;
-    transform: translateY(-50%);
+    transform: translateY(-50%) rotate(-180deg);;
     height: 25px;
     width: 25px;
     background: var(--primary-color);
@@ -140,6 +141,10 @@ body.dark {
     border-radius: 50%;
     color: var(--sidebar-color);
     font-size: 37px;
+}
+
+.sidebar.close header .toggle{
+    transform: translateY(-50%);
 }
 
 .menu-bar {
@@ -210,4 +215,25 @@ body.dark {
 
 body.dark .switch::before {
     left: 24px;
+}
+
+.home{
+    position: relative;
+    height: 100vh;
+    left: 250px;
+    width: calc(100%-250px);
+    background: var(--body-color);
+    transition: var(--tran-05);
+}
+
+.home .text{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 8px 40px;
+}
+
+.sidebar.close ~ .home{
+    left: 84px;
+    width: calc(100% - 88px);
 }

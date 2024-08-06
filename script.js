@@ -11,3 +11,15 @@ const body = document.querySelector("body"),
     modeSwitch.addEventListener("click", () =>{
         body.classList.toggle("dark");
     });
+
+
+    // Function to handle click events
+function handleClick(event) {
+    alert(`You clicked on ${event.target.textContent.trim()}`);
+}
+
+// Add event listeners to each menu link
+document.getElementById('home').addEventListener('click', handleClick);
+document.getElementById('project-board').addEventListener('click', handleClick);
+document.getElementById('learning-growth').addEventListener('click', handleClick);
+document.getElementById('technical-skills').addEventListener('click', handleClick);
