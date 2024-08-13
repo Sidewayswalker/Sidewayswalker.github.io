@@ -1,0 +1,86 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 160px;
+  background-color: #1659c5;
+  overflow: auto; /* Ensure the nav can scroll if content overflows */
+  padding: 20px; /* Optional padding for content spacing */
+  background-image: url(/Nav_Background.jpg);
+}
+
+/* Specific Tab Text */
+.nav a {
+  text-decoration: none;
+}
+
+.title_profession_box {
+  border-style: ridge;
+  border-width: 5px;
+  border-color: black;
+  padding-bottom: 1px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.nav-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #f2f2f2;
+  padding-left: 0px;
+  padding-bottom: 5px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.nav-profession {
+  font-size: 18px;
+  font-weight: 400;
+  color: #f2f2f2;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.navLink {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  color: #f2f2f2;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  white-space: nowrap;
+  font-family: Arial, sans-serif;
+  margin-bottom: 15px;
+  padding-left: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+/* Add some space between the icon and the text */
+.navLink .icon {
+  font-size: 25px;
+  margin-right: 10px; 
+}
+
+.menu-bar ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.navLink:hover {
+  background-color: #7db1ff;
+  border-radius: 15%; /* Adjusted border-radius */
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Main content area */
