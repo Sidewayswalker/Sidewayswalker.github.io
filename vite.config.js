@@ -10,8 +10,8 @@ export default defineConfig(() => {
             minify: "esbuild",
             rollupOptions: { // Move rollupOptions inside build
                 input: {
-                    main: resolve(__dirname, "./index.html"),
-                    404: resolve(__dirname, "./src/pages/error/Error"),
+                    main: resolve(__dirname, "./index.html")
+                    // 404: resolve(__dirname, "./src/pages/error/Error"),
                 },
             },
         },
