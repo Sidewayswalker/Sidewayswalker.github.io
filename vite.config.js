@@ -12,6 +12,6 @@ export default defineConfig(() => {
             }
         },
         plugins: [react()],
-        base: "/Sidewayswalker.github.io/"
+        base: "./"
     };
 });
