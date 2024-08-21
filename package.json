@@ -1,7 +1,7 @@
 {
-  "homepage": "https://github.com/Sidewayswalker/Sidewayswalker.github.io.git",
+  "homepage": "https://github.com/Sidewayswalker/Sidewayswalker.github.io",
   "version": "1.0.0",
-  "name": "Sidewayswalker.github.io.git",
+  "name": "Sidewayswalker.github.io",
   "private": true,
   "engines": {
     "node": ">=18.x"
