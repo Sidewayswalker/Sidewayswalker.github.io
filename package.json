@@ -1,6 +1,7 @@
 {
-  "name": "prime-solo-project",
+  "homepage": "https://github.com/Sidewayswalker/Sidewayswalker.github.io.git",
   "version": "1.0.0",
+  "name": "Sidewayswalker.github.io.git",
   "private": true,
   "engines": {
     "node": ">=18.x"
@@ -12,6 +13,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.17.1",
     "express-session": "^1.18.0",
+    "gh-pages": "^6.1.1",
     "passport": "^0.7.0",
     "passport-local": "^1.0.0",
     "pg": "^8.5.1",
@@ -28,7 +30,9 @@
     "client": "vite",
     "server": "nodemon --watch server server/server.js",
     "build": "vite build",
-    "test": "vitest"
+    "test": "vitest",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
