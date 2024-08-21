@@ -7,13 +7,13 @@ export default defineConfig(() => {
             outDir: 'build',
             assetsDir: "assets", // Directory for static assets in the build output.
             minify: "esbuild", // Minification options (terser or esbuild).
-              rollupOptions: {
+            },
+            rollupOptions: {
                 input: {
                   main: resolve(__dirname, "./index.html"),
                   404: resolve(__dirname, "./src/pages/error/Error"),
                 },
               },
-            },
         server: {
             proxy: {
                 "/api":'http://localhost:5001',
