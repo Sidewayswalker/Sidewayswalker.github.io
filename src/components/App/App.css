@@ -7,15 +7,15 @@ body,
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
-  background-color: #e4f5ff;
+  background-color: #0e4f5ff;
 }
 
 .container {
   height: 100vh; /* Full viewport height */
-  width: calc(100% - 200px); /* Adjust width to fill the remaining space */
+  width: calc(100% - 243.85px); /* Adjust width to fill the remaining space */
   position: absolute;
   top: 0;
-  left: 200px; /* Position to the right */
+  left: 243.85px; /* Position to the right */
   box-sizing: border-box; /* Include padding and border in the width/height */
   padding: 20px; /* Optional: Add paddfing for spacing */
 }
