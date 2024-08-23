@@ -39,7 +39,7 @@
 
 .sidebar header .toggle {
   position: absolute;
-  top: 5%;
+  top: 40px;
   right: -12px;
   transform: translateY(-50%);
   height: 25px;
