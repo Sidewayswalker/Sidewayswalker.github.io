@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import LogOutButton from '../LogOutButton/LogOutButton';
 import './Nav.css';
@@ -6,23 +6,31 @@ import { useSelector } from 'react-redux';
 import logo from '../../../sklogo.jpg';
 
 function Nav() {
+  // State to manage whether the sidebar is closed or not
+  const [isClosed, setIsClosed] = useState(false);
+
+  // Function to toggle the sidebar's closed state
+  const handleToggleClick = () => {
+    setIsClosed((prevState) => !prevState);
+  };
 
   return (
-    <nav className='sidebar close'>
+    // Dynamically set the class name based on the isClosed state
+    <nav className={`sidebar ${isClosed ? 'close' : ''}`}>
       <header>
-          <div className='image-text'>
-            <span className='image'>
-              <img src={logo} alt='logo' />
-            </span>
+        <div className='image-text'>
+          <span className='image'>
+            <img src={logo} alt='logo' />
+          </span>
 
-            <div className='header-text'>
-              <span className='name'>Steven Karl</span>
-              <span className='profession'>Software Engineer</span>
-            </div>
+          <div className='header-text'>
+            <span className='name'>Steven Karl</span>
+            <span className='profession'>Software Engineer</span>
           </div>
+        </div>
 
-        <i className='bx bx-chevron-right toggle' onClick={'nav-bar-change'}
-        ></i>
+        {/* Correctly assign the onClick handler without quotes */}
+        <i className='bx bx-chevron-left toggle' onClick={handleToggleClick}></i>
       </header>
 
       <div className='menu-bar'>
