@@ -9,3 +9,33 @@
     font-size: 18px;
     
 }
+
+
+
+
+
+
+  
+  .technical-skills-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .tech-skills {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .front-back-container {
+    display: flex;
+    gap: 20px; /* Adjust the gap between the columns */
+  }
+  
+  .front-back-column {
+    flex: 1; /* Make both columns equal width */
+  }
+  
+  .more-coming-soon {
+    margin-top: 20px;
+    font-style: italic;
+  }
