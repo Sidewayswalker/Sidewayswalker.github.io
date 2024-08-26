@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import LogOutButton from '../LogOutButton/LogOutButton';
 import './Nav.css';
 import { useSelector } from 'react-redux';
+import logo from '../../../sklogo.jpg';
 
 function Nav() {
 
@@ -11,7 +12,7 @@ function Nav() {
       <header>
           <div className='image-text'>
             <span className='image'>
-              <img src='../../../sklogo.jpg' alt='logo' />
+              <img src={logo} alt='logo' />
             </span>
 
             <div className='header-text'>
