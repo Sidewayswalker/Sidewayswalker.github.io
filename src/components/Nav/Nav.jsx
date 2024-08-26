@@ -11,7 +11,7 @@ function Nav() {
       <header>
           <div className='image-text'>
             <span className='image'>
-              <img src='./sklogo.jpg' alt='logo' />
+              <img src='../.././sklogo.JPEG' alt='logo' />
             </span>
 
             <div className='header-text'>
