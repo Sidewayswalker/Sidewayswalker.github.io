@@ -1,36 +1,77 @@
+.technical-skills-title {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.technical-skills-table {
+    margin: auto;
+    border: solid;
+    border-width: 2px;
+}
+.technical-skills-table th {
+    border: solid;
+    border-width: 3px;
+}
+
+.technical-skills-table td {
+    border: solid;
+    border-width: 1px;
+}
+
+.expertise {
+    transform: translateY(-10px);
+    margin-bottom: -10px; 
+}
+.definition {
+    max-width: 300px;
+}
+
+
+
+
+
+
+
+
+.small-box-red{
+    width: 20px;  
+    height: 10px; 
+    background-color: red;
+    display: inline-block;
+}
+
+.small-box-yellow{
+    width: 20px;  
+    height: 10px; 
+    background-color: yellow;
+    display: inline-block;
+}
+
+.small-box-green{
+    width: 20px; 
+    height: 10px; 
+    background-color: green;
+    display: inline-block;
+}
+
+.center-content {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .more-coming-soon {
     text-align: center;
 }
 
-.technical-skills-title {
-    text-align: center;
-}
 
-.technical-skills-description {
-    text-align: center;
-    font-size: 18px;
-}
-
-.technical-skills-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-  
-.tech-skills {
-    display: flex;
-    flex-direction: column;
-}
-  
-.front-back-container {
-    display: flex;
-    gap: 20px; 
-}
-  
-.front-back-column {
-    flex: 1; 
-}
-  
-.more-coming-soon {
-    margin-top: 20px;
-    font-style: italic;
-}
