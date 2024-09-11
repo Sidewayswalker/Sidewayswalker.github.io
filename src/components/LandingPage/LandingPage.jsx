@@ -13,6 +13,14 @@ function LandingPage() {
     history.push('/login');
   };
 
+  //! Handle Wireframe expand
+
+    const [isFullScreen, setIsFullScreen] = useState(false);
+  
+    const handleWireframeClick = () => {
+      setIsFullScreen(!isFullScreen);
+    }
+
   return (
     <div className="container">
       <h2 className='LandingPageTitle'>Steven Karl's<br></br>Personal Website</h2>
@@ -22,6 +30,39 @@ function LandingPage() {
           alt="Steven's Picture" 
       />
       </center>
+
+
+      <div className='wireframe'>
+        <h3>Wireframe</h3>
+         
+          {/* Small Image */}
+        <img 
+        src="./Personal_Website_Wireframe.png" 
+        alt="Wireframe" 
+        className='thumbnail'
+        onClick={handleWireframeClick}
+        />
+        <p>Susceptible to Change</p>
+
+
+          {/* Large Image */}
+        {isFullScreen && (
+          <div 
+            className='fullscreen-overlay'
+            onClick={handleWireframeClick}
+          >
+            <img 
+              src="./Personal_Website_Wireframe.png" 
+              alt="Wireframe Fullscreen" 
+              className='fullscreen-image'
+            />
+          </div>
+        )}
+      </div>
+
+
+
+
     
       <div className="grid">
         <div className="grid-col grid-col_12">
