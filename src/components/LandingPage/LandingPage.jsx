@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import './LandingPage.css';
-import '../../../Personal_Website_Wireframe.png'
+import wireframe from '../../../Personal_Website_Wireframe.png'
 
 // CUSTOM COMPONENTS
 import RegisterForm from '../RegisterForm/RegisterForm';
@@ -41,7 +41,7 @@ function LandingPage() {
 
           
         <img 
-          src='../../../Personal_Website_Wireframe.png'
+          src={wireframe}
           alt="Wireframe" 
           className='thumbnail'
           onClick={handleWireframeClick}
@@ -56,7 +56,7 @@ function LandingPage() {
             onClick={handleWireframeClick}
           >
             <img 
-              src='../../../Personal_Website_Wireframe.png'
+              src={wireframe}
               alt="Wireframe Fullscreen" 
               className='fullscreen-image'
             />
