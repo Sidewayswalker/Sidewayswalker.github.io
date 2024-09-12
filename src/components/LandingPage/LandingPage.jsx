@@ -46,7 +46,7 @@ function LandingPage() {
           className='thumbnail'
           onClick={handleWireframeClick}
         />
-        <p>Susceptible to Change</p>
+        <p>Subject to Change</p>
 
 
           {/* Large Image */}

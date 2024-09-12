@@ -36,7 +36,7 @@ function ProjectBoard() {
         <div className='Games'>
           <h3>Games</h3>
           <li>
-            Coming Soon
+            Coming Soon - Hobby
           </li>
         </div>
     </div>

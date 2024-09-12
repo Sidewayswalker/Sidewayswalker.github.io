@@ -12,14 +12,14 @@ function LearningGrowth() {
       <li>Mentor Meetings</li>
       <li>Interview Practice</li>
       <li>Tech Terminology</li>
-      <li>Apply for Jobs</li>
+      <li>Applying for Jobs</li>
     <h3>August 2024</h3>
       <li>Upgrade Personal Website</li>
       <li>Networking Events</li>
     <h3>September 2024</h3>
-      <li>Applying to Jobs</li>
+      <li>Applying for Jobs</li>
       <li>Networking & Meetups</li>
-    <li></li>
+      <li>Mock Interviews</li>
     <h3>October 2024</h3>
     <li>TBD</li>
     <h3>November 2024</h3>
