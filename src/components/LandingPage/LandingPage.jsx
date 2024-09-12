@@ -37,7 +37,7 @@ function LandingPage() {
          
           {/* Small Image */}
         <img 
-        src="./Personal_Website_Wireframe.png" 
+        src="Personal_Website_Wireframe.png" 
         alt="Wireframe" 
         className='thumbnail'
         onClick={handleWireframeClick}
