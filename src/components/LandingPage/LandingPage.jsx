@@ -52,7 +52,7 @@ function LandingPage() {
             onClick={handleWireframeClick}
           >
             <img 
-              src="./Personal_Website_Wireframe.png" 
+              src="Personal_Website_Wireframe.png" 
               alt="Wireframe Fullscreen" 
               className='fullscreen-image'
             />
