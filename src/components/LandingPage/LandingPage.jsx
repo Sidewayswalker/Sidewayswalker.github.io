@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import './LandingPage.css';
+import '../../../Personal_Website_Wireframe.png'
 
 // CUSTOM COMPONENTS
 import RegisterForm from '../RegisterForm/RegisterForm';
@@ -36,11 +37,14 @@ function LandingPage() {
         <h3>Wireframe</h3>
          
           {/* Small Image */}
+
+
+          
         <img 
-        src="Personal_Website_Wireframe.png" 
-        alt="Wireframe" 
-        className='thumbnail'
-        onClick={handleWireframeClick}
+          src='../../../Personal_Website_Wireframe.png'
+          alt="Wireframe" 
+          className='thumbnail'
+          onClick={handleWireframeClick}
         />
         <p>Susceptible to Change</p>
 
@@ -52,7 +56,7 @@ function LandingPage() {
             onClick={handleWireframeClick}
           >
             <img 
-              src="Personal_Website_Wireframe.png" 
+              src='../../../Personal_Website_Wireframe.png'
               alt="Wireframe Fullscreen" 
               className='fullscreen-image'
             />
