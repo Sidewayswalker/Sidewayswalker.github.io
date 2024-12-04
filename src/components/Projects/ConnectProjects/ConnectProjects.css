@@ -1,72 +1,65 @@
 .container-ConnectProjects {
-/* Vibrant background */
-    border-color: rgb(255, 182, 59); /* Complementary border color */
-    padding: 20px 0px; /* Consistent padding */
-    display: flex; /* Enable flexbox */
+    border-color: rgb(255, 182, 59); /* Border color */
+    padding: 20px 0; /* Padding */
+    display: flex;
     justify-content: center; /* Horizontal centering */
-    align-items: center; /* Vertical centering (optional) */
-    height: auto; /* Ensure proper height; set a specific value if needed */
-    text-align: center; /* Text alignment for children */
+    align-items: center; /* Vertical centering */
+    height: auto;
+    text-align: center;
 }
 
 .Container-ConnectProjects-Inner {
-    border-style: double; /* Adds a decorative border */
+    border-style: double;
     border-width: 7px;
-    width: 50%; /* Ensure it adapts to the container */
-    padding: 10px; /* Add some padding */
-    text-align: center; /* Center text inside */
+    width: 50%;
+    padding: 10px;
+    text-align: center;
 }
-
-
-
 
 .ConnectProjects-Text {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    font-family: 'Arial', sans-serif; /* Clean and professional */
-    font-size: 20px; /* Increase readability */
-    color: #ffffff; /* Contrast with background */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds depth */
-    margin-bottom: 20px; /* Spacing from button */
+    font-family: 'Arial', sans-serif; /* Clean font */
+    font-size: 20px;
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+    margin-bottom: 20px;
 }
 
 .ConnectProjects-Button {
     display: inline-block;
-    background: linear-gradient(135deg, rgb(252, 174, 6), rgb(206, 35, 1)); /* Fun gradient */
-    color: #ffffff; /* White text for contrast */
+    background: linear-gradient(135deg, rgb(252, 174, 6), rgb(206, 35, 1)); 
+    color: #ffffff;
     -webkit-text-stroke-width: 1.2px;
     -webkit-text-stroke-color: black;
-    font-family: 'Comic Sans MS', sans-serif; /* Quirky font */
+    font-family: 'Arial', sans-serif; /* Changed from Comic Sans */
     font-size: 26px;
     font-weight: bolder;
-    padding: 12px 30px; /* Comfortable padding */
-    border: 3px solid rgb(255, 255, 255); /* White border for pop */
-    border-radius: 20px; /* Fully rounded button */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Adds depth */
-    transition: all 0.3s ease; /* Smooth hover animations */
+    padding: 12px 30px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
     cursor: pointer;
     margin-bottom: 12px;
 }
 
-/* Button hover effect */
 .ConnectProjects-Button:hover {
-    background: linear-gradient(135deg, rgb(206, 35, 1), rgb(252, 174, 6)); /* Reverse gradient */
-    color: #ffffff; 
-    border-color: rgb(255, 255, 255); /* Match border color */
-    transform: scale(1.1); /* Slightly enlarges the button */
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); /* More pronounced shadow */
+    background: linear-gradient(135deg, rgb(206, 35, 1), rgb(252, 174, 6)); 
+    transform: scale(1.1);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Button active effect */
 .ConnectProjects-Button:active {
-    transform: scale(0.95); /* Shrinks slightly when clicked */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Reduces shadow */
+    transform: scale(0.95); 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .LetsTalkButton {
-    color: white; /* White text for contrast */
+    color: white;
     -webkit-text-stroke-width: 1.3px;
     -webkit-text-stroke-color: black;
     text-decoration: none; 
+    font-family: 'Arial', sans-serif; /* Added consistent font-family */
 }
