@@ -30,8 +30,8 @@
 }
 
 .work-picture {
-    width: 200px;
-    height: 100px;
+    width: 280px;
+    height: auto;
     border: 2px solid;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -44,7 +44,7 @@
 /* Details Styling */
 .work-details {
     margin-top: 20px;
-    background-color: #E07A5F;
+    background-color: #e3eaf2;
     border-width: 2px;
     border-style: solid;
     border-radius: 10px;
@@ -68,14 +68,16 @@
 
 .Technologies-List {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 .Technologies-Appearance {
-    background-color: #dde5ee;
+    background-color: #7993b4;
+    color: white;
     border-style: solid;
     border-width: 2px;
     border-radius: 40px;
+    border-color: black;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 5px;
@@ -98,6 +100,19 @@
             height: auto;
             padding: auto;
             text-align: center;
+        }
+        @media (max-width: 485px) {
+            .work-container {
+                display: flex; /* Use CSS Grid for layout */
+                flex-direction: column;
+                padding-top: 40px;
+                padding-left: 0px;
+                padding-right: 0px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
         }
     }
 }
