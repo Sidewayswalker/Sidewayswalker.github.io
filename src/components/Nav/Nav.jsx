@@ -1,69 +1,110 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import LogOutButton from '../LogOutButton/LogOutButton';
-import './Nav.css';
 import { useSelector } from 'react-redux';
-import logo from '../../../sklogo.jpg';
+import './Nav.css';
+import sklogo from '../../../sklogo.jpg';
+import MiniNavMenu from './MiniNavMenu/MiniNavMenu';
+
 
 function Nav() {
-  // State to manage whether the sidebar is closed or not
-  const [isClosed, setIsClosed] = useState(false);
+  const [CurrentPage, setCurrentPage] = useState(0);
+  const [MiniMenuStatus, setMiniMenuStatus] = useState(false);
 
-  // Function to toggle the sidebar's closed state
-  const handleToggleClick = () => {
-    setIsClosed((prevState) => !prevState);
-  };
+
+  //* Home is '0'
+  function ChangePageHome() {
+    if (CurrentPage === '0') {  // Use === for comparison
+      console.log('Already 0');
+      return;
+    } else {
+      setCurrentPage('0');  // Corrected assignment
+      console.log('0');
+      return;
+    }
+  }
+  
+  //* Projects is '1'
+  function ChangePageProjects() {
+    if (CurrentPage === '1') {  // Use === for comparison
+      console.log('Already 1');
+      return;
+    } else {
+      setCurrentPage('1');  // Corrected assignment
+      console.log('1');
+      return;
+    }
+  }
+  
+  //* Contact is '2'
+  function ChangePageContact() {
+    if (CurrentPage === '2') {  // Use === for comparison
+      console.log('Already 2');
+      return;
+    } else {
+      setCurrentPage('2');  // Corrected assignment
+      console.log('2');
+      return;
+    }
+  }
+  
+  //* MiniMenu Open/Close
+  function ToggleMiniMenu() {
+    setMiniMenuStatus(prevStatus => !prevStatus);
+    console.log(MiniMenuStatus); 
+  }
+
+
+
+
 
   return (
-    // Dynamically set the class name based on the isClosed state
-    <nav className={`sidebar ${isClosed ? 'close' : ''}`}>
-      <header>
-        <div className='image-text'>
-          <span className='image'>
-            <img src={logo} alt='logo' />
-          </span>
+    <div >
+      
+      <div className='Nav-Body'>
+        <Link className='Nav-Logo-Link' to='/' onClick={ChangePageHome} >
+          <img src={sklogo} alt="Logo" className="Nav-Logo" />
+        </Link>
 
-          <div className='header-text'>
-            <span className='name'>Steven Karl</span>
-            <span className='profession'>Software Engineer</span>
-          </div>
+        <div className='Nav-Name-Title'>
+          <Link className='Name-Title-Link' to='/' onClick={ChangePageHome}>
+          <h1>Steven Karl</h1>
+          <h2>Software Engineer</h2>
+          </Link>
         </div>
 
-        {/* Correctly assign the onClick handler without quotes */}
-        <i className='bx bx-chevron-left toggle' onClick={handleToggleClick}></i>
-      </header>
+        <div className='Responsive-Links'>
+          <div className='Big-Links'>
+            {/* Make sure these Links correctly reference the routes */}
+            <Link className='Big-Link' to='/Projects' onClick={ChangePageProjects}>
+              <div className='Nav-Projects'>Projects</div>
+            </Link>
+            <Link className='Big-Link' to='/ContactMe' onClick={ChangePageContact}>
+            <div className='Nav-ContactMe'>Contact Me</div>
+            </Link>
+          </div>
 
-      <div className='menu-bar'>
-        <div className='menu'>
-          <ul className='group-nav-link'>
-            <li>
-              <Link className='navLink' to='/'>
-                <i className='bx bx-home icon'></i>
-                <span className='text nav-text'>Home</span>
-              </Link>
-            </li>
-            <li>
-              <Link className='navLink' to='/ProjectBoard'>
-                <i className='bx bx-clipboard icon'></i>
-                <span className='text nav-text'>Project Board</span>
-              </Link>
-            </li>
-            <li>
-              <Link className='navLink' to='/LearningGrowth'>
-                <i className='bx bx-trending-up icon'></i>
-                <span className='text nav-text'>Learning & Growth</span>
-              </Link>
-            </li>
-            <li>
-              <Link className='navLink' to='/TechnicalSkills'>
-                <i className='bx bx-data icon'></i>
-                <span className='text nav-text'>Technical Skills</span>
-              </Link>
-            </li>
-          </ul>
+          <div className={`Small-Links Highlighted-Background ${ MiniMenuStatus ? 'Rotated' : ''}`} onClick={ToggleMiniMenu} >
+            <i className="bx bx-menu"></i>
+          </div>
+
         </div>
       </div>
-    </nav>
+
+
+      <div>
+      {/* {MiniMenuStatus && <MiniNavMenu />} */}
+      <MiniNavMenu 
+        className={MiniMenuStatus ? 'SlideDown' : 'SlideUp'} 
+        ChangePageHome={ChangePageHome} 
+        ChangePageProjects={ChangePageProjects} 
+        ChangePageContact={ChangePageContact} 
+        ToggleMiniMenu={ToggleMiniMenu} 
+      />
+
+      </div>
+
+
+    </div>
   );
 }
 

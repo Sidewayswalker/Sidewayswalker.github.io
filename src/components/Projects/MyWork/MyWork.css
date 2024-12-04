@@ -1,0 +1,29 @@
+.container-MyWork {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(3, 1fr); /* Three columns of equal width */
+    gap: 20px; /* Space between items */
+    justify-items: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+}
+
+
+@media (max-width: 1395px) {
+    .container-MyWork {
+        display: grid; /* Use CSS Grid for layout */
+        grid-template-columns: repeat(2, 1fr); /* Three columns of equal width */
+        gap: 20px; /* Space between items */
+        justify-items: center; /* Centers items horizontally */
+        align-items: center; /* Centers items vertically */
+        width: auto;
+    }
+
+    @media (max-width: 830px) {
+        .container-MyWork {
+            display: grid; /* Use CSS Grid for layout */
+            grid-template-columns: repeat(1, 1fr); /* Three columns of equal width */
+            gap: 0px; /* Space between items */
+            justify-items: center; /* Centers items horizontally */
+            align-items: center; /* Centers items vertically */
+        }
+    }
+}

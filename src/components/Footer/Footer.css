@@ -1,5 +1,16 @@
 footer {
-  margin-top: 0px;
-  padding: 0px;
   text-align: center;
+  background-color: #f7cb84;
+  padding-bottom: 15px;
 }
+
+.Footer-Main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr; /* Two equal columns and one double-width column */
+  gap: 20px; /* Space between columns */
+  justify-items: center; /* Horizontally center items inside each grid column */
+  padding: 12px; /* Add padding around the grid */
+  max-width: 600px; /* Set a maximum width for the grid */
+  margin: 0 auto; /* Horizontally center the grid container itself */
+}
+

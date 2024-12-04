@@ -1,0 +1,22 @@
+.SiteMapTitle {
+    font-weight:600;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.SiteMapList {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Adds space between the links */
+}
+
+
+.SiteMapHome,
+.SiteMapProjects,
+.SiteMapContactMe {
+    color: rgb(83, 83, 203);
+    font-family: 'monospace', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    text-decoration: none;
+}

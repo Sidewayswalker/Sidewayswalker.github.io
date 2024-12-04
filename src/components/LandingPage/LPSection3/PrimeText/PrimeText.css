@@ -1,0 +1,40 @@
+.Prime-Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;    
+    height: 100%;           
+    width: 100%;            
+    text-align: center;   
+    font-family: 'monospace', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+
+.Prime-Text-Box {
+    background-color: #d6fcea;
+    border-radius: 40px;
+    padding: 20px;
+    
+}
+
+
+
+
+
+/*? Smallest */
+@media (min-width: 500px) and (max-width: 725px) {
+    .Prime-Text-Box{
+        margin: 0px 20px;
+    }
+}
+
+
+/*? Biggest */
+@media (min-width: 1278px) {
+    .Prime-Text-Box{
+        max-width: 900px;  /* The text looks good when the page is huge. */
+        padding: 25px;
+    }
+    .Small-Profile-Text {
+        display: none;
+    }
+}

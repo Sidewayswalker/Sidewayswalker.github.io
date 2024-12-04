@@ -1,0 +1,22 @@
+.SocialMediaTitle {
+    font-weight:600;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.SocialMediaList {
+    display: flex;
+    flex-direction: column;
+    gap: 6px; /* Adds space between the links */
+}
+
+.SocialMediaGithub,
+.SocialMediaLinkedIn,
+.SocialMediaInstagram,
+.SocialMediaEmail {
+    color: rgb(83, 83, 203);
+    font-family: 'monospace', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    text-decoration: none;
+}

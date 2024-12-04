@@ -1,0 +1,8 @@
+.CompanyQuote {
+    max-width: 240px;
+    margin-top: 3px;
+    border-style: double;
+    border-width: 4px;
+    font-family: Garamond, serif;
+    font-size: 17px;
+}

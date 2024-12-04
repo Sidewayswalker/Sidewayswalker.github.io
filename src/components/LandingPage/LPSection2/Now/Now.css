@@ -1,0 +1,50 @@
+.Now {
+    /* background-image: url('../ScrollPaper.jpg');
+    filter: brightness(1.4); */
+    background-color: #dde5ee;
+    border-radius: 40px; 
+    height: auto;
+    width: auto;
+    margin: auto;
+    max-height: fit-content;
+    margin: none;
+}
+
+.NowHead {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.NowList {
+    content: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+
+.NowList li {
+    list-style-type: square;
+    margin: 16px;
+    margin-left: 0px;
+}
+
+.NowList li::marker {
+    font-size: 20px;
+}
+
+
+@media (min-width: 333px) and (max-width: 956px) {
+    .Now{
+        margin-top: 20px;
+        width: auto;
+    }
+    .NowList {
+        width: auto;
+    }
+    .NowList li{
+        width: auto;
+    }
+}

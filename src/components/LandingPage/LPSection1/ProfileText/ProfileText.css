@@ -1,0 +1,44 @@
+.Profile-Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;    /* Centers vertically */
+    height: 100%;           /* Ensure the container has height for vertical centering */
+    width: 100%;            /* Optional: full width for horizontal centering */
+    text-align: center;   
+    font-family: 'monospace', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+
+.Large-Profile-Text {
+    background-color: #fcd8ce;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.GreetingText {
+    margin-bottom: 30px;
+}
+.Small-Profile-Text {
+    display: none;
+}
+
+/*? Smallest */
+@media (min-width: 500px) and (max-width: 725px) {
+    .Large-Profile-Text, .Small-Profile-Text {
+        margin: 0px 20px;
+    }
+}
+
+
+/*? Biggest */
+@media (min-width: 1278px) {
+    .GreetingText,
+    .PassionText{
+        max-width: 900px;  /* The text looks good when the page is huge. */
+        padding: 10px;
+    }
+    .Small-Profile-Text {
+        display: none;
+    }
+}
+

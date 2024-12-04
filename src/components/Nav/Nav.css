@@ -1,134 +1,161 @@
-.sidebar {
-  position:fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 220px;
-  padding: 10px 12px;
-  background-image: url(/Nav_Background.jpg);
+.Nav-Body {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Align children to specific areas */
+  background-color: #F4F1DE;
+  width: 100%; /* Full width of the screen */
+  height: 100px; /* Fixed height */
+  padding: 0 20px; /* Add padding on left and right */
+  box-sizing: border-box; /* Include padding in width calculations */
+  position: relative; /* Allows centering without interfering with flexbox */
+  border-style: solid;
+  border-bottom-width: 5px;
 }
 
-.sidebar.close{
-  width: 65px;
-}
-
-.sidebar.close .header-text {
-  display: none;
-}
-
-.sidebar.close .nav-text {
-  display: none;
-}
-
-.sidebar.close .bx-chevron-left {
-  height: 40px;
-  width: 20px;
-  right: 0px;
-  top: 15px;
-  transform: rotate(180deg);
-}
-
-.sidebar .image-text img {
-  height: 50px;
-  width: 50px;
+/* Align logo to the left */
+.Nav-Logo {
+  width: auto; /* Maintain aspect ratio */
+  height: 70px; /* Adjust logo height */
+  position: absolute; /* Absolute positioning */
+  left: 15px; /* Distance from the left edge */
   border-width: 1px;
-  border-color: orange;
   border-style: solid;
 }
-
-.sidebar header .image-text {
-  display: flex;
-  align-items: center;
-}
-
-.sidebar header .header-text {
-  padding-left: 12px;
-  display: flex;
-  flex-direction: column;
-}
-
-.sidebar header .header-text .name {
-  font-size: 28px;
-  font-weight: 400;
-  color: whitesmoke;
-}
-
-.sidebar header .header-text .profession {
-  font-size: 18px;
-  color: rgb(161, 158, 158)
-}
-
-.sidebar header .toggle {
-  position: absolute;
-  top: 35px;
-  right: 0.0px;
-  transform: translateY(-50%);
-  height: 40px;
-  width: 20px;
-  background-color: rgba(254, 182, 39, 0.901);
-  border-radius: 50px;
+.Nav-Logo:hover {
   border-color: black;
-  border-width: 1px;
-  border-style: solid;
+  box-shadow: 0 0 5px 2px black;
+  transform: translateX(0%) scale(1.1); 
+}
+  /* Fixing the React Link to appear normally in space given */
+.Nav-Logo-Link {
+margin-top: -70px;
+}
+
+
+/* Center the title container */
+.Nav-Name-Title {
+  margin: 0 auto; /* Center horizontally */
+  text-align: center; /* Center text inside */
+  font-family: 'Arial', sans-serif; /* Font family */
+  color: #333; /* Text color */
+  position: absolute; /* Allow centering */
+  left: 50%; /* Center based on parent's width */
+  transform: translateX(-50%); /* Adjust for natural width of content */
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+      .Nav-Name-Title h1 {
+        font-size: 30px; /* Title font size */
+        margin: 0; /* Remove margin */
+        padding-bottom: 2px; /* Space between title and subtitle */
+      }
+
+      .Nav-Name-Title h2 {
+        font-size: 18px; /* Subtitle font size */
+        margin: 0; /* Remove margin */
+        font-weight: normal; /* Optional: lighter subtitle weight */
+      }
+      .Nav-Name-Title:hover {
+        transform: translateX(-50%) scale(1.1); 
+      }
+        /* Fixing the React Link to appear normal */
+      .Name-Title-Link {
+        color: black;
+        text-decoration: none;
+      }
+
+
+/* Default to BIG */
+.Responsive-Links {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 40px;
-  color: black;
-  z-index: 1;
-}
-
-.sidebar.close ~ .container{
-  left: 89.2px;
-  width: calc(100%);
-}
-
-.group-nav-link {
-  list-style: none;
-  padding: 15px 11.5px
-}
-
-.navLink .icon {
-  font-size: 30px;
-  margin-right: 10px; 
-}
-
-.navLink {
-  display: flex;
-  align-items: center; /* Align items vertically in the center */
-  color: #f2f2f2;
-  text-align: left;
-  text-decoration: none;
-  font-size: 16px;
-  white-space: nowrap;
-  font-family: Arial, sans-serif;
-  margin-bottom: 15px;
-  padding-left: 0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.navLink:hover {
-  background-color: #7db1ff;
-  border-radius: 15%; /* Adjusted border-radius */
-  margin-left: -20px;
-  margin-right: -20px;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  flex-direction: row;
+  margin-left: auto;
+  text-align: right; /* Align text to the right */
+  padding: 20px;
 }
 
 
 
 
+/*! BIG Screens */
+@media (min-width: 733px) {
+  .Big-Links {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+  }
+
+  /* Fixing the React Link to appear normal */
+  .Big-Link {
+    color: black;
+    text-decoration: none;
+  }
+
+  .Small-Links{
+    display: none;
+  }
+
+  .Nav-Projects {
+    margin-right: 10px;
+    padding: 25px 10px;
+    font-family: 'monospace', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    border: 2px solid transparent; 
+    transition: transform 0.3s ease, background-color 0.5s ease; 
+  }
+
+  .Nav-ContactMe {
+    margin-right: -15px;
+    margin-left: 10px;
+    padding: 25px 10px;
+    font-family: 'monospace', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid transparent; 
+    transition: transform 0.5s ease, background-color 0.5s ease; 
+  }
+
+  .Responsive-Links .Nav-Projects:hover,
+  .Responsive-Links .Nav-ContactMe:hover {
+    transform: translateX(0%) scale(1.2); 
+    text-decoration: underline;
+  }
+}
 
 
 
 
+/*! SMALL Screens */
+@media (max-width: 732px) {
+  .Big-Links {
+    display: none;
+  }
+
+  .Small-Links {
+    font-size: 70px;
+    margin-right: -25px;
+  }
+
+  /* Establish Rotation Animation*/
+  @keyframes rotate-animation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(90deg);
+    }
+  }
+
+  .Highlighted-Background {
+    display: flex;
+    height: 80px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.7s ease; /* Smooth rotation transition */
+  }
+  
+  .Rotated {
+    transform: rotate(90deg); /* Rotate 90 degrees */
+    background-color: #f7cb84;
+  }
+  
 
 
-
-
-
-
-
+}

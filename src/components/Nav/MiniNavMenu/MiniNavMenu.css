@@ -1,0 +1,83 @@
+@media (min-width: 733px) {
+  .DropDownMenu {
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 732px) {
+  .DropDownMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    margin-top: 100px;
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+  .Mini-Home {
+  background-color: #f7cb84;
+  height: 80px;
+  font-size: 18px;
+  align-content: center;
+  text-align: center;
+  border-style: solid;
+  border-color: black;
+  color: black;
+  border-top-width: 0px;
+  border-bottom-width: 3px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  text-decoration: none;
+  }
+
+  .Mini-Projects {
+  background-color: #f7cb84;
+  height: 80px;
+  font-size: 18px;
+  align-content: center;
+  text-align: center;
+  border-style: solid;
+  border-color: black;
+  color: black;
+  border-top-width: 3px;
+  border-bottom-width: 3px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  text-decoration: none;
+  }
+
+  .Mini-Contact {
+  background-color: #f7cb84;
+  height: 80px;
+  font-size: 18px;
+  align-content: center;
+  text-align: center;
+  border-style: solid;
+  border-color: black;
+  color: black;
+  border-top-width: 3px;
+  border-bottom-width: 6px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  text-decoration: none;
+  } 
+
+  .Mini-Home:hover,
+  .Mini-Projects:hover,
+  .Mini-Contact:hover {
+    background-color: rgb(48, 213, 48)
+  }
+  
+  /* Animation States */
+  .SlideDown {
+    transform: translateY(0);
+  }
+  
+  .SlideUp {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}

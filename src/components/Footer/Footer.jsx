@@ -1,5 +1,8 @@
 import React from 'react';
 import './Footer.css';
+import SiteMap from './SiteMap/SiteMap';
+import SocialMedia from './SocialMedia/SocialMedia';
+import CompanyQuote from './CompanyQuote/CompanyQuote';
 
 // This is one of our simplest components
 // It doesn't have local state, so it can be a function component.
@@ -7,7 +10,20 @@ import './Footer.css';
 // or even care what the redux state is, so it doesn't need 'connect()'
 
 function Footer() {
-  return <footer>&copy; Steven Karl</footer>;
+  return (
+    <footer> 
+      <span className='Footer-Main'>
+        <SiteMap />
+        <SocialMedia />
+        <CompanyQuote />
+      </span>
+
+      <div>
+        @2024 Steven Karl
+      </div>
+
+    </footer>
+  )
 }
 
 export default Footer;

@@ -1,0 +1,75 @@
+.LPcontainer2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%vh;
+    height: auto;
+    background-color: #7993b4;
+    margin-top: 0px;  
+    font-family: Garamond, serif;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center; 
+}
+
+.Three-Box-Display {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-evenly; /* Evenly distribute blocks */
+    width: 100%; /* Take full width of container */
+    gap: 20px; /* Space between boxes */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.Three-Box-Display > div {
+    flex: 1; /* Each block takes up equal space */
+    text-align: center; /* Center content inside each block */
+    padding: 5px;
+    box-sizing: border-box; /* Include padding in width */
+    border: 1px solid #ccc; /* Example: Add a border to differentiate blocks */
+}
+
+
+/* @media (min-width: 1400px) {
+    .LPcontainer2{
+        background-color: rgb(181, 0, 0);
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .LPcontainer2 {
+        background-color: rgb(181, 112, 0);
+    }
+}
+@media (min-width: 1000px) and (max-width: 1199px) {
+    .LPcontainer2 {
+        background-color: rgb(200, 177, 29);
+    }
+}
+@media (min-width: 800px) and (max-width: 999px) {
+    .LPcontainer2 {
+        background-color: rgb(112, 198, 27);
+    }
+}
+@media (min-width: 600px) and (max-width: 799px) {
+    .LPcontainer2 {
+        background-color: rgb(82, 237, 206);
+    }
+}
+@media (min-width: 1200px) and (max-width: 599px) {
+    .LPcontainer2 {
+        background-color: rgb(22, 86, 155);
+    }
+}
+@media (max-width: 399px) {
+    .LPcontainer2 {
+        background-color: rgb(180, 46, 214);
+    }
+} */
+
+
+
+@media (max-width: 956px) {
+    .Three-Box-Display {
+        display: flex;
+        flex-direction: column;
+    }
+}
