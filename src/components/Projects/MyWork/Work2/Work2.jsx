@@ -14,7 +14,16 @@ function Work2() {
         <p className="work-text">
           A client-focused application for scheduling and documenting home maintenance. It ensures efficient data handling, seamless server-client communication, and responsive, user-friendly designs.
         </p>
+
         <p className="work-heading">Technologies:</p>
+        <span className='Technologies-List'>
+          <p className='Technologies-Appearance'></p>
+          <p className='Technologies-Appearance'></p>
+          <p className='Technologies-Appearance'></p>
+          <p className='Technologies-Appearance'></p>
+          <p className='Technologies-Appearance'></p>
+          <p className='Technologies-Appearance'></p>
+        </span>
       </div>
     </div>
   );

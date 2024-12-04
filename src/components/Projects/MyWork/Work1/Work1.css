@@ -44,6 +44,13 @@
 .work-details {
     margin-top: 20px;
     background-color: #dde5ee;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    
 }
 
 .work-heading {
@@ -88,7 +95,7 @@
     }
     @media (max-width: 830px) {
         .work-container {
-            height: 320px;
+            height: 420px;
         }
     }
 }
