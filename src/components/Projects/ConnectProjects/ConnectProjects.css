@@ -37,7 +37,7 @@
     color: #ffffff; /* White text for contrast */
     -webkit-text-stroke-width: 1.2px;
     -webkit-text-stroke-color: black;
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* Quirky font */
+    font-family: 'Comic Sans MS', sans-serif; /* Quirky font */
     font-size: 26px;
     font-weight: bolder;
     padding: 12px 30px; /* Comfortable padding */
