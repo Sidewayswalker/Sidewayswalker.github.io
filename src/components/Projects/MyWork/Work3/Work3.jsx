@@ -15,14 +15,18 @@ function Work3() {
         <p className="work-text">My portfolio website showcases my skills, experience, and projects, allowing me to demonstrate my technical expertise and share my problem-solving approach with potential employers or clients.</p>
 
         <p className="work-heading">Technologies:</p>
-        <span className='Technologies-List'>
-          <p className='Technologies-Appearance'>Javascript</p>
-          <p className='Technologies-Appearance'>React</p>
-          <p className='Technologies-Appearance'>Redux</p>
-          <p className='Technologies-Appearance'>Express</p>
-          <p className='Technologies-Appearance'>Vite</p>
-          <p className='Technologies-Appearance'>CSS</p>
+        <span className="Technologies-List">
+          <p className="Technologies-Appearance">JavaScript</p>
+          <p className="Technologies-Appearance">React</p>
+          <p className="Technologies-Appearance">CSS</p>
+          
+          <p className="Technologies-Appearance">Redux</p>
+          <p className="Technologies-Appearance">Express</p>
+          
+          <p className="Technologies-Appearance">Vite</p>
+          <p className="Technologies-Appearance">Google Analytics</p>
         </span>
+
       </div>
     </div>
   );

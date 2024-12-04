@@ -17,12 +17,23 @@ function Work2() {
 
         <p className="work-heading">Technologies:</p>
         <span className='Technologies-List'>
-          <p className='Technologies-Appearance'></p>
-          <p className='Technologies-Appearance'></p>
-          <p className='Technologies-Appearance'></p>
-          <p className='Technologies-Appearance'></p>
-          <p className='Technologies-Appearance'></p>
-          <p className='Technologies-Appearance'></p>
+          <p className='Technologies-Appearance'>JavaScript</p>
+          <p className='Technologies-Appearance'>React</p>
+          <p className='Technologies-Appearance'>Redux</p>
+          <p className='Technologies-Appearance'>Material UI</p>
+          <p className='Technologies-Appearance'>SASS</p>
+
+          <p className='Technologies-Appearance'>Node.js</p>
+          <p className='Technologies-Appearance'>Express</p>
+          <p className='Technologies-Appearance'>Passport</p>
+          <p className='Technologies-Appearance'>Bcrypt.js</p>
+
+          <p className='Technologies-Appearance'>PostgreSQL</p>
+
+          <p className="Technologies-Appearance">Axios</p>
+          <p className="Technologies-Appearance">Dotenv</p>
+          <p className="Technologies-Appearance">Vite</p>
+          
         </span>
       </div>
     </div>

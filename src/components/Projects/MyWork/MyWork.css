@@ -1,9 +1,38 @@
+.Hosting-Format {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    font-size: 20px;
+
+}
+
+
+.Hosting-On {
+    display: none;
+    color: rgb(51, 253, 51);
+    margin-left: 10px;
+}
+
+.Hosting-Off {
+        /* display: none; */
+        color: rgb(255, 0, 0);
+        margin-left: 10px;
+} 
+
+
+
+
+
 .container-MyWork {
     display: grid; /* Use CSS Grid for layout */
     grid-template-columns: repeat(3, 1fr); /* Three columns of equal width */
     gap: 20px; /* Space between items */
     justify-items: center; /* Centers items horizontally */
-    align-items: center; /* Centers items vertically */
+    align-items: top; /* Centers items vertically */
 }
 
 
@@ -13,7 +42,7 @@
         grid-template-columns: repeat(2, 1fr); /* Three columns of equal width */
         gap: 20px; /* Space between items */
         justify-items: center; /* Centers items horizontally */
-        align-items: center; /* Centers items vertically */
+        align-items: top; /* Centers items vertically */
         width: auto;
     }
 

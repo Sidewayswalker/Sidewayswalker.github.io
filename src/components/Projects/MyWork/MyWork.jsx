@@ -6,12 +6,22 @@ import Work3 from './Work3/Work3'
 
 function MyWork() {
   return (
-    <div className="container-MyWork">
-        <Work1 />
-        <Work2 />
-        <Work3 />
+    <div className='MyWork-All'>
+
+      <div className='Hosting-Format'>
+        <div className='Hosting-Message'>Hosting Status:</div>
+        <div className='Hosting-On'>On</div>
+        <div className='Hosting-Off'>Off</div>
+      </div>
+
+      <div className="container-MyWork">
+          <Work1 />
+          <Work2 />
+          <Work3 />
+      </div>
     </div>
   );
 }
 
 export default MyWork;
+
