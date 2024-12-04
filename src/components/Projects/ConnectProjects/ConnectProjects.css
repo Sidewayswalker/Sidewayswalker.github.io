@@ -53,7 +53,7 @@
 .ConnectProjects-Button:hover {
     background: linear-gradient(135deg, rgb(206, 35, 1), rgb(252, 174, 6)); /* Reverse gradient */
     color: #ffffff; 
-    border-color: rgb(255, 182, 59); /* Match border color */
+    border-color: rgb(255, 255, 255); /* Match border color */
     transform: scale(1.1); /* Slightly enlarges the button */
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); /* More pronounced shadow */
 }
@@ -65,8 +65,8 @@
 }
 
 .LetsTalkButton {
-    color: black; /* White text for contrast */
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: white;
+    color: white; /* White text for contrast */
+    -webkit-text-stroke-width: 1.3px;
+    -webkit-text-stroke-color: black;
     text-decoration: none; 
 }
