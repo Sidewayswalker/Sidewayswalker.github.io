@@ -1,65 +1,61 @@
+/* General Container */
 .container-ConnectProjects {
-    border-color: rgb(255, 182, 59); /* Border color */
-    padding: 20px 0; /* Padding */
     display: flex;
-    justify-content: center; /* Horizontal centering */
-    align-items: center; /* Vertical centering */
-    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
     text-align: center;
+    border-color: rgb(255, 182, 59);
 }
 
 .Container-ConnectProjects-Inner {
-    border-style: double;
-    border-width: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: double 7px rgb(0, 0, 0);
     width: 50%;
     padding: 10px;
-    text-align: center;
 }
 
+/* Text styling */
 .ConnectProjects-Text {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    font-family: 'Arial', sans-serif; /* Clean font */
+    font-family: 'Arial', sans-serif;
     font-size: 20px;
-    color: #ffffff; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     margin-bottom: 20px;
 }
 
-.ConnectProjects-Button {
+/* Button styling */
+.LetsTalkButton {
     display: inline-block;
-    background: linear-gradient(135deg, rgb(252, 174, 6), rgb(206, 35, 1)); 
-    color: #ffffff;
-    -webkit-text-stroke-width: 1.2px;
+    background: linear-gradient(135deg, rgb(252, 174, 6), rgb(206, 35, 1));
+    color: white;
+    text-decoration: none;
+    -webkit-text-stroke-width: 1.3px;
     -webkit-text-stroke-color: black;
-    font-family: 'Arial', sans-serif; /* Changed from Comic Sans */
+    font-family: 'Arial', sans-serif;
     font-size: 26px;
     font-weight: bolder;
     padding: 12px 30px;
-    border: 3px solid rgb(255, 255, 255);
+    border: 3px solid white;
     border-radius: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
     cursor: pointer;
-    margin-bottom: 12px;
 }
 
-.ConnectProjects-Button:hover {
-    background: linear-gradient(135deg, rgb(206, 35, 1), rgb(252, 174, 6)); 
+/* Hover and Active States */
+.LetsTalkButton:hover {
+    background: linear-gradient(135deg, rgb(206, 35, 1), rgb(252, 174, 6));
     transform: scale(1.1);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-.ConnectProjects-Button:active {
-    transform: scale(0.95); 
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
-}
-
-.LetsTalkButton {
-    color: white;
-    -webkit-text-stroke-width: 1.3px;
-    -webkit-text-stroke-color: black;
-    text-decoration: none; 
-    font-family: 'Arial', sans-serif; /* Added consistent font-family */
+.LetsTalkButton:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
