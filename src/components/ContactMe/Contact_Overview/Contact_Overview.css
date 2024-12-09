@@ -1,0 +1,41 @@
+.Contact_Overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    background-color: #E07A5F;
+    height: auto;
+    margin: 0 auto; /* Centers the element horizontally */
+    padding: 30px 20px; /* Adjusted padding for better consistency */
+    width: 90%; /* Responsive width for smaller screens */
+    max-width: 1100px; /* Sets a maximum width */
+    font-size: 22px;
+    text-align: center;
+    position: relative; /* Enables the use of `top` */
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.Contact_Overview_Box {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px; /* Increased padding for better spacing */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: float 2s ease-in-out infinite; /* Retains the float effect */
+}
+
+.Contact_Overview_Box h2 {
+    font-size: 28px;
+    color: #E07A5F;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 900px) {
+    .Contact_Overview {
+
+        padding: 20px; /* Adjusted padding for smaller screens */
+    }
+}

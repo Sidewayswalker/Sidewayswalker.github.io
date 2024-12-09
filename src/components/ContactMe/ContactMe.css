@@ -1,4 +1,7 @@
 .container-ContactMe {
     background-color: #81B29A;
-    height: 400px;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
+

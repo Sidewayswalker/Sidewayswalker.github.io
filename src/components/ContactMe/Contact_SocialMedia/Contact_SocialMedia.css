@@ -1,0 +1,59 @@
+.Contract_SocialMedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    background-color: #E07A5F;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+    padding: 30px 30px;
+    width: 50%;
+    font-size: 22px;
+    text-align: center;
+    position: relative; /* Enables the use of `top` */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+.Contract_SocialMedia_Box {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 10px 30px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: float 2s ease-in-out infinite;
+}
+
+.Contract_SocialMedia_Text {
+    font-size: 28px;
+    color: #E07A5F;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.SocialMedia_Icons {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.Github_Icon,
+.Linkedin_Icon,
+.Instagram_Icon,
+.Email_Icon {
+    border-style: solid;
+    border-width: 3px;
+    padding: 5px;
+    height: 50px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+
+
+@media (min-width: 1000px) {
+    .Contract_SocialMedia {
+        width: 500px;
+    }
+}
