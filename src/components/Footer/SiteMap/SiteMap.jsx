@@ -5,18 +5,22 @@ import './SiteMap.css';
 
 function SiteMap() {
 
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   return (
     <div className="SiteMap">
         <p className='SiteMapTitle'>SiteMap</p>
 
         <div className='SiteMapList'>
-          <Link className='SiteMapHome' to='/'>
+          <Link className='SiteMapHome' to='/' onClick={scrollToTop}>
               <div>Home</div>
           </Link>
-          <Link className='SiteMapProjects' to='/Projects'>
+          <Link className='SiteMapProjects' to='/Projects' onClick={scrollToTop}>
               <div>Projects</div>
           </Link>
-          <Link className='SiteMapContactMe' to='/ContactMe'>
+          <Link className='SiteMapContactMe' to='/ContactMe' onClick={scrollToTop}>
             <div>Contact Me</div>
           </Link>
         </div>

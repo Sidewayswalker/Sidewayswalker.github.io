@@ -6,7 +6,7 @@
     background-color: #E07A5F;
     height: auto;
     margin: 0 auto; /* Centers the element horizontally */
-    padding: 30px 20px; /* Adjusted padding for better consistency */
+    padding: 30px 40px; /* Adjusted padding for better consistency */
     width: 90%; /* Responsive width for smaller screens */
     max-width: 1100px; /* Sets a maximum width */
     font-size: 22px;
@@ -33,7 +33,7 @@
     letter-spacing: 2px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .Contact_Overview {
 
         padding: 20px; /* Adjusted padding for smaller screens */
