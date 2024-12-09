@@ -13,11 +13,12 @@ function Nav() {
 
   //* Home is '0'
   function ChangePageHome() {
-    if (CurrentPage === '0') {  // Use === for comparison
+    if (CurrentPage === '0') {
       console.log('Already 0');
       return;
     } else {
-      setCurrentPage('0');  // Corrected assignment
+      setCurrentPage('0');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
       console.log('0');
       return;
     }
@@ -25,11 +26,12 @@ function Nav() {
   
   //* Projects is '1'
   function ChangePageProjects() {
-    if (CurrentPage === '1') {  // Use === for comparison
+    if (CurrentPage === '1') {
       console.log('Already 1');
       return;
     } else {
-      setCurrentPage('1');  // Corrected assignment
+      setCurrentPage('1');
+      window.scrollTo({ top: 0, behavior: 'smooth' }); 
       console.log('1');
       return;
     }
@@ -37,11 +39,12 @@ function Nav() {
   
   //* Contact is '2'
   function ChangePageContact() {
-    if (CurrentPage === '2') {  // Use === for comparison
+    if (CurrentPage === '2') {
       console.log('Already 2');
       return;
     } else {
-      setCurrentPage('2');  // Corrected assignment
+      setCurrentPage('2');
+      window.scrollTo({ top: 0, behavior: 'smooth' }); 
       console.log('2');
       return;
     }
