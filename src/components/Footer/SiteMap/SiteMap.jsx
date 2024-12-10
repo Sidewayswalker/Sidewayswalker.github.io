@@ -6,8 +6,13 @@ function SiteMap() {
   const location = useLocation();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const timeout = setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 200); // Delay of 200ms
+  
+    return () => clearTimeout(timeout); // Cleanup timeout on unmount
   }, [location]);
+  
 
   return (
     <div className="SiteMap">
