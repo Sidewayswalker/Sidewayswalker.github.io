@@ -4,80 +4,37 @@
   }
 }
 
-
-
-@media (max-width: 732px) {
-  .DropDownMenu {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    margin-top: 100px;
-    width: 100%;
-    transition: all .5s ease-in-out;
+/* Hide dropdown by default */
+.DropDownMenu {
+  display: flex;
+  flex-direction: column;
+  max-height: 0; /* Initially hidden */
+  overflow: hidden; /* Prevent content from showing */
+  transition: max-height 0.5s ease-in-out;
+  background-color: #f7cb84;
+  z-index: 1;
+  width: 100%;
 }
 
-  .Mini-Home {
-  background-color: #f7cb84;
-  height: 80px;
-  font-size: 18px;
-  align-content: center;
-  text-align: center;
-  border-style: solid;
-  border-color: black;
-  color: black;
-  border-top-width: 0px;
-  border-bottom-width: 3px;
-  border-left-width: 5px;
-  border-right-width: 5px;
-  text-decoration: none;
-  }
+/* Show the menu with dynamic height */
+.DropDownMenu.show {
+  max-height: 300px; /* Adjust this value to fit the menu's full height */
+}
 
-  .Mini-Projects {
-  background-color: #f7cb84;
-  height: 80px;
-  font-size: 18px;
-  align-content: center;
-  text-align: center;
-  border-style: solid;
-  border-color: black;
-  color: black;
-  border-top-width: 3px;
-  border-bottom-width: 3px;
-  border-left-width: 5px;
-  border-right-width: 5px;
+/* Menu links styles */
+.Mini-Home,
+.Mini-Projects,
+.Mini-Contact {
+  padding: 20px;
   text-decoration: none;
-  }
-
-  .Mini-Contact {
-  background-color: #f7cb84;
-  height: 80px;
-  font-size: 18px;
-  align-content: center;
-  text-align: center;
-  border-style: solid;
-  border-color: black;
   color: black;
-  border-top-width: 3px;
-  border-bottom-width: 6px;
-  border-left-width: 5px;
-  border-right-width: 5px;
-  text-decoration: none;
-  } 
+  text-align: center;
+  border: 2px solid black;
+  transition: transform 0.3s ease;
+}
 
-  .Mini-Home:hover,
-  .Mini-Projects:hover,
-  .Mini-Contact:hover {
-    background-color: rgb(48, 213, 48)
-  }
-  
-  /* Animation States */
-  .SlideDown {
-    transform: translateY(0);
-  }
-  
-  .SlideUp {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
+.Mini-Home:hover,
+.Mini-Projects:hover,
+.Mini-Contact:hover {
+  transform: scale(1.1);
 }

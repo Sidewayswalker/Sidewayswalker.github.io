@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './MiniNavMenu.css';
 
-function MiniNavMenu({ className, ChangePageHome, ChangePageProjects, ChangePageContact, ToggleMiniMenu }) {
+function MiniNavMenu({ isOpen, ChangePageHome, ChangePageProjects, ChangePageContact, ToggleMiniMenu }) {
   return (
-    <div className={`DropDownMenu ${className}`}>
+    <div className={`DropDownMenu ${isOpen ? 'show' : ''}`}>
       <Link 
         className="Mini-Home" 
         to="/" 
@@ -15,6 +15,7 @@ function MiniNavMenu({ className, ChangePageHome, ChangePageProjects, ChangePage
       >
         Home
       </Link>
+
       <Link 
         className="Mini-Projects" 
         to="/Projects" 
@@ -25,6 +26,7 @@ function MiniNavMenu({ className, ChangePageHome, ChangePageProjects, ChangePage
       >
         Projects
       </Link>
+
       <Link 
         className="Mini-Contact" 
         to="/ContactMe" 

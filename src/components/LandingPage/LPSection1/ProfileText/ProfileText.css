@@ -6,7 +6,8 @@
     height: 100%;           /* Ensure the container has height for vertical centering */
     width: 100%;            /* Optional: full width for horizontal centering */
     text-align: center;   
-    font-family: 'monospace', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-family: Garamond, serif;
+    font-size: 20px;
 }
 
 .Large-Profile-Text {
