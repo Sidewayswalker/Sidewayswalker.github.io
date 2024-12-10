@@ -32,7 +32,7 @@ function App() {
           {/* Contact Me page */}
           <Route exact path="/ContactMe" component={ContactMe} />
 
-          {/* If none of the other routes matched, show a 404 */}
+          {/* If none of the other routes matched, redirect to home */}
           <Route>
             <Redirect to="/home" />
           </Route>
