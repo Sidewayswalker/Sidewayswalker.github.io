@@ -1,31 +1,28 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './SiteMap.css'; 
-
+import React, { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import './SiteMap.css';
 
 function SiteMap() {
+  const location = useLocation();
 
-  function scrollToTop() {
+  useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+  }, [location]);
 
   return (
     <div className="SiteMap">
-        <p className='SiteMapTitle'>SiteMap</p>
-
-        <div className='SiteMapList'>
-          <Link className='SiteMapHome' to='/' onClick={scrollToTop}>
-              <div>Home</div>
-          </Link>
-          <Link className='SiteMapProjects' to='/Projects' onClick={scrollToTop}>
-              <div>Projects</div>
-          </Link>
-          <Link className='SiteMapContactMe' to='/ContactMe' onClick={scrollToTop}>
-            <div>Contact Me</div>
-          </Link>
-        </div>
-
-
+      <p className='SiteMapTitle'>SiteMap</p>
+      <div className='SiteMapList'>
+        <Link className='SiteMapHome' to='/'>
+          <div>Home</div>
+        </Link>
+        <Link className='SiteMapProjects' to='/Projects'>
+          <div>Projects</div>
+        </Link>
+        <Link className='SiteMapContactMe' to='/ContactMe'>
+          <div>Contact Me</div>
+        </Link>
+      </div>
     </div>
   );
 }
