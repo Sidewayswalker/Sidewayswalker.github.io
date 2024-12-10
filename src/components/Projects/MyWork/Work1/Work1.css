@@ -65,7 +65,7 @@
     left: 0;
     width: 100vw; /* Ensure it takes up the full viewport width */
     height: 100vh; /* Ensure it takes up the full viewport height */
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    background-color: rgba(0, 0, 0, 0.85); /* Semi-transparent black background */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Horizontally center the image */
@@ -76,15 +76,52 @@
   
   .work-picture-fullscreen {
     max-width: 90%; /* Limit width to 90% of viewport */
-    max-height: 90%; /* Limit height to 90% of viewport */
+    max-height: 50%; /* Limit height to 90% of viewport */
     object-fit: contain; /* Ensure the image maintains its aspect ratio */
   }
 
   .fullscreen-text {
     color: white;
     font-size: 60px;
-    
+    text-align: center;
   }
+
+
+  .fullscreen-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+
+  /* -----------------------------------------------------------
+  Controlls for Full Screen
+----------------------------------------------------------- */
+  .fullscreen-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+  }
+
+  .fullscreen-button-close {
+    padding: 10px 20px;
+    background-color: #ff271c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  
+  .fullscreen-button:hover {
+    background-color: #0056b3;
+  }
+  
   
 
 /* -----------------------------------------------------------

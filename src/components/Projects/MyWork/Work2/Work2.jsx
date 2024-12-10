@@ -1,26 +1,57 @@
 import React, { useState } from 'react';
 import "./Work2.css";
-import HCD from './HCD_Pictures/HCD_Login_Big.png';
+import HCD from './HCD_Pictures/HCD_LOGO.png';
+import HCD0 from './HCD_Pictures/HCD_Login.png';
+import HCD1 from './HCD_Pictures/1HCD_home.png';
+import HCD2 from './HCD_Pictures/2HCD_intake.png'; 
+import HCD3 from './HCD_Pictures/3HCD_Intake_Furnace.png';
 
 function Work2() {
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Array of images to cycle through in fullscreen mode
+  const images = [HCD0, HCD1, HCD2, HCD3];
+
+  // Toggle fullscreen view
   const toggleFullscreen = () => {
     setIsFullscreen(!isFullscreen);
+  };
+
+  // Go to the next image
+  const nextImage = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  // Go to the previous image
+  const prevImage = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
   return (
     <div className="work-container">
       <h2 className="work-title">House Checkup Digital</h2>
-      
-      {/* Conditionally render fullscreen view when `isFullscreen` is true */}
-      {isFullscreen ? (
-        <div className="fullscreen" onClick={toggleFullscreen}>
-          <img src={HCD} alt="House Checkup Digital Home" className="work-picture-fullscreen" />
-        </div>
-      ) : (
-        <div className="work-image" onClick={toggleFullscreen}>
-          <img src={HCD} alt="House Checkup Digital Home" className="work-picture" />
+
+      {/* Normal image with click handler */}
+      <div className="work-image" onClick={toggleFullscreen}>
+        <img src={HCD} alt="House Checkup Digital" className="work-picture" />
+      </div>
+
+      {/* Fullscreen view when `isFullscreen` is true */}
+      {isFullscreen && (
+        <div className="fullscreen">
+          <img
+            src={images[currentIndex]}
+            alt={`Fullscreen View ${currentIndex + 1}`}
+            className="work-picture-fullscreen"
+          />
+          <div className="fullscreen-controls">
+            <button className="fullscreen-button" onClick={prevImage}>Back</button>
+            <button className="fullscreen-button-close" onClick={toggleFullscreen}>Close</button>
+              <button className="fullscreen-button" onClick={nextImage}>
+                Next <box-icon type="solid" name="right-arrow"></box-icon>
+            </button>
+          </div>
         </div>
       )}
 
@@ -31,21 +62,21 @@ function Work2() {
         </p>
 
         <p className="work-heading">Technologies:</p>
-        <span className="Technologies-List">
-          <p className="Technologies-Appearance">JavaScript</p>
-          <p className="Technologies-Appearance">React</p>
-          <p className="Technologies-Appearance">Redux</p>
-          <p className="Technologies-Appearance">Material UI</p>
-          <p className="Technologies-Appearance">SASS</p>
-          <p className="Technologies-Appearance">Node.js</p>
-          <p className="Technologies-Appearance">Express</p>
-          <p className="Technologies-Appearance">Passport</p>
-          <p className="Technologies-Appearance">Bcrypt.js</p>
-          <p className="Technologies-Appearance">PostgreSQL</p>
-          <p className="Technologies-Appearance">Axios</p>
-          <p className="Technologies-Appearance">Dotenv</p>
-          <p className="Technologies-Appearance">Vite</p>
-        </span>
+        <div className="Technologies-List">
+          <span className="Technologies-Appearance">JavaScript</span>
+          <span className="Technologies-Appearance">React</span>
+          <span className="Technologies-Appearance">Redux</span>
+          <span className="Technologies-Appearance">Material UI</span>
+          <span className="Technologies-Appearance">SASS</span>
+          <span className="Technologies-Appearance">Node.js</span>
+          <span className="Technologies-Appearance">Express</span>
+          <span className="Technologies-Appearance">Passport</span>
+          <span className="Technologies-Appearance">Bcrypt.js</span>
+          <span className="Technologies-Appearance">PostgreSQL</span>
+          <span className="Technologies-Appearance">Axios</span>
+          <span className="Technologies-Appearance">Dotenv</span>
+          <span className="Technologies-Appearance">Vite</span>
+        </div>
       </div>
     </div>
   );
