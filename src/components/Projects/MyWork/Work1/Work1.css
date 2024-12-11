@@ -50,7 +50,7 @@
 
 .work-picture:hover {
     transform: scale(1.2); /* Scales image on hover */
-    opacity: 0.85; /* Slight opacity change on hover */
+    opacity: 0.9; /* Slight opacity change on hover */
 }
 
 /* -----------------------------------------------------------
