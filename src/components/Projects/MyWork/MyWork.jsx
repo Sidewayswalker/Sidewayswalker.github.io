@@ -3,6 +3,7 @@ import "./MyWork.css"
 import Work1 from './Work1/Work1'
 import Work2 from './Work2/Work2'
 import Work3 from './Work3/Work3'
+import Work4 from './Work4/Work4'
 
 function MyWork() {
   return (
@@ -18,6 +19,7 @@ function MyWork() {
           <Work1 />
           <Work2 />
           <Work3 />
+          <Work4 />
       </div>
     </div>
   );

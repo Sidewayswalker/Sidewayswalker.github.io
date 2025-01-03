@@ -1,0 +1,7 @@
+.work-video-fullscreen {
+    width: 100%;
+    height: auto;
+    max-height: 90vh; /* Ensure it doesn't exceed the viewport height */
+    max-width: 90vh;
+    object-fit: cover; /* Ensure proper scaling and maintain aspect ratio */
+  }
