@@ -12,7 +12,7 @@ function Work4() {
 
   return (
     <div className="work-container">
-      <h2 className="work-title">3D Space Web-Background</h2>
+      <h2 className="work-title">Outer Space</h2>
 
       {/* Conditionally render fullscreen view when `isFullscreen` is true */}
       {isFullscreen ? (
